@@ -1,6 +1,8 @@
+/* Default Styles */
 body{
     height: 100vh;
 }
+
 header{
     height: 15vh;
     font-family: "Inconsolata", monospace;
@@ -16,14 +18,14 @@ header{
     width: 39%;
     display: inline-block;
     vertical-align: top;
-
 }
+
 .image-wrapper img{
   width: 60%;
   float: right;
   margin-right: 25px;
-  
 }
+
 .content-wrapper{
     width: 60%;
     display: inline-block;
@@ -31,31 +33,33 @@ header{
     font-family: "Space Mono", monospace;
     letter-spacing: 3px;
 }
+
 main{
     padding: 5rem;
     height: 80vh;
 }
+
 .content-wrapper h1{
     font-size: 3rem;
-    
 }
+
 .content-wrapper p{
     font-size: 21px;
     margin-top: 20px;
     line-height: 1.8;
     color: #333333;
     margin-bottom: 25px;
-    margin-bottom: 25px;
 }
 
 .content-wrapper a{
     text-decoration: none;
-     background-color: #333333;
-     color: #c6c6c6;
-     padding: 15px 20px;
-     text-transform: uppercase;
-     font-size: 12px;
+    background-color: #333333;
+    color: #c6c6c6;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-size: 12px;
 }
+
 footer{
     height: 5vh;
     text-align: center;
@@ -64,4 +68,53 @@ footer{
     
 }
 
+/* Media Query (375px - 768px) */
+@media (min-width: 375px) and (max-width: 768px) {
+
+    header{
+        color: aqua;
+        text-align: center;
+    }
+
+    /* Full width for image wrapper */
+    .image-wrapper {
+        width: 100%; /* Takes full width */
+        display: block;
+        margin: 0 auto;
+        align-items: center;
+        
+    }
+
+    /* Center the h1 in content-wrapper */
+    .content-wrapper h1{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* Center content-wrapper paragraph */
+    .content-wrapper p{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* Footer section hidden */
+    footer{
+        display: none;
+    }
+
+    /* Styling for content-wrapper link */
+    .content-wrapper a{
+        text-decoration: none;
+        background-color: #333333;
+        color: #c6c6c6;
+        padding: 10px 8px;
+        text-transform: uppercase;
+        font-size: 10px;
+        text-align: center;
+        display: block;
+    }
+
+    
+    
+}
 
